@@ -308,3 +308,33 @@ p.service1{
 p.service3{
   font-size: x-large;
 }
+.infinity-slide{
+  display: flex; /* 二つのスライドを横に並べる */
+  width: 50vw;
+  margin: 0 25vw;
+  background: gray;
+  overflow: hidden;
+}
+
+#slide {
+  animation: infinity-loop 10s infinite linear 1s both; /* 無限ループアニメーションの設定 */
+  display: flex; /* スライドの要素を横に並べる */
+  width: 400vw;
+  height: 400px;
+  position: relative;
+}
+
+#slide img{
+  height: 100%;
+  width: auto；
+}
+
+/* 無限ループアニメーション */
+@keyframes infinity-loop {
+  from {
+    transform: translateX(0vw);
+  }
+  to {
+    transform: translateX(-368.75vw);
+  }
+}
