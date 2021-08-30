@@ -335,6 +335,10 @@ p.service3{
     transform: translateX(0vw);
   }
   to {
-    transform: translateX(-368.75vw);
+    transform: translateX(-260vw);
   }
+}
+.notification {
+  text-align: center;
+  font-size: x-large;
 }
