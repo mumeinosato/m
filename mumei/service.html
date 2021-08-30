@@ -17,5 +17,29 @@
             <p><img src="discordicon.png"></p>
             <p class="service3">DiscordBot<br><br>多機能を目指しているDiscord Botです。<br><br><a href="bot.html">詳細</a><br><br></p><br>
         </div>
+        <div class="flex">
+            <p><img src="vip.png"></p>
+            <p class="service3">VIP<br><br>これから提供される新サービスでVIP機能を利用できます。<br><u>今登録してもお金が減るだけで何もできません。</u><br><p id="paypal-button-container-P-25W52639J4188161WMEWF5KI"></p></p>
+            <script src="https://www.paypal.com/sdk/js?client-id=Aev_Mq4gETBrimQ1ezGinIEYqZ6tpUbZtAuAksMyk6seQbrvAQG0QqF81g29JiruXjxnuQQyUX45NG3A&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+            <script>
+              paypal.Buttons({
+                  style: {
+                      shape: 'pill',
+                      color: 'gold',
+                      layout: 'vertical',
+                      label: 'paypal'
+                  },
+                  createSubscription: function(data, actions) {
+                    return actions.subscription.create({
+                      /* Creates the subscription */
+                      plan_id: 'P-25W52639J4188161WMEWF5KI'
+                    });
+                  },
+                  onApprove: function(data, actions) {
+                    alert(data.subscriptionID); // You can add optional success message for the subscriber here
+                  }
+              }).render('#paypal-button-container-P-25W52639J4188161WMEWF5KI'); // Renders the PayPal button
+            </script>
+        </div> 
     </body>
     </html>
