@@ -342,3 +342,21 @@ p.service3{
   text-align: center;
   font-size: x-large;
 }
+.terms{
+  text-align: center;
+  font-size: xx-large;
+}
+.terms1{
+  text-align: center;
+  font-size: x-large;
+}
+.terms2{
+  text-align: center;
+  font-size: medium;
+}
+a.terms3{
+  color: #000;
+  text-decoration: none;
+  display: table-cell;
+  vertical-align: middle;
+}
